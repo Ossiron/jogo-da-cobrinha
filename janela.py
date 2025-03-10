@@ -1,9 +1,16 @@
 import pygame
 import sys
 import random
+import os
 
 
 pygame.init()
+
+
+
+# Mudar para o diretório onde o script está localizado
+script_dir = os.path.dirname(__file__)  # Obtém o diretório do script
+os.chdir(script_dir)  # Define o diretório como o atual
 
 
 pygame.mixer.music.set_volume(.5)
